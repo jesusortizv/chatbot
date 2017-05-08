@@ -1,0 +1,46 @@
+.conversacion-panel {
+  max-height: 20rem;
+  overflow-y: scroll;
+
+  &__messages {
+    list-style: none;
+    padding: 2rem;
+
+    li {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__message {
+      display: inline-flex;
+
+      blockquote {
+        border: none;
+        border-radius: 1rem;
+        font-size: 1rem;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      &--user {
+        align-self: flex-end;
+        color: #FFF;
+
+        blockquote {
+          background: #4080FF;
+          font-weight: 600;
+        }
+      }
+
+      &--system {
+        blockquote {
+          background: #F1F0F0;
+        }
+
+        i {
+          color: #009EFF;
+        }
+      }
+    }
+  }
+}

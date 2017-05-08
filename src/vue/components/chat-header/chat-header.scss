@@ -1,0 +1,18 @@
+.chat-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background: #3B77ED;
+  width: 100%;
+
+  &__title {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+
+  &__tools {
+    a {
+      text-decoration: none;
+    }
+  }
+}
